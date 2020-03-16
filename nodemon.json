@@ -1,0 +1,7 @@
+{
+  "igonre": [
+    "dist/*"
+  ],
+  "watch": "src",
+  "ext": "js,scss"
+}

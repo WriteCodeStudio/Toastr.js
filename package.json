@@ -1,0 +1,46 @@
+{
+  "name": "@writecodestudio/toastr.js",
+  "version": "1.0.0",
+  "description": "Simple toastr js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"npm run build:dev\"",
+    "build": "cross-env NODE_ENV=\"production\" npm run build:lib && npm run build:style",
+    "build:dev": "cross-env NODE_ENV=\"development\" npm run build:lib && npm run build:style",
+    "build:lib": "cross-env-shell npx webpack --config webpack.config.js --toastrjs",
+    "build:style": "cross-env-shell node sass-build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WriteCodeStudio/toastr.js.git"
+  },
+  "keywords": [
+    "toastr",
+    "js",
+    "notification",
+    "javascript",
+    "writecodestudio"
+  ],
+  "author": "OsirisFrik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WriteCodeStudio/toastr.js/issues"
+  },
+  "homepage": "https://github.com/WriteCodeStudio/toastr.js#readme",
+  "contributors": [
+    {
+      "name": "OsirisFrik",
+      "url": "https://osirisfrik.github.io"
+    }
+  ],
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "node-sass": "^4.13.1",
+    "node-sass-package-importer": "^5.3.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  }
+}

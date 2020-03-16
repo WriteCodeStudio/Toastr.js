@@ -1,0 +1,44 @@
+@import '~animate.css/source/_base.css'; // Import Animate
+@import '~animate.css/source/_vars.css';
+
+// Import fadeIn
+@import '~animate.css/source/fading_entrances/fadeIn.css';
+@import '~animate.css/source/fading_entrances/fadeInDown.css';
+@import '~animate.css/source/fading_entrances/fadeInUp.css';
+@import '~animate.css/source/fading_entrances/fadeInLeft.css';
+@import '~animate.css/source/fading_entrances/fadeInRight.css';
+
+// Import fadeOut
+@import '~animate.css/source/fading_exits/fadeOut.css';
+@import '~animate.css/source/fading_exits/fadeOutDown.css';
+@import '~animate.css/source/fading_exits/fadeOutUp.css';
+@import '~animate.css/source/fading_exits/fadeOutLeft.css';
+@import '~animate.css/source/fading_exits/fadeOutRight.css';
+
+.toastr-container {
+  position: fixed;
+  z-index: 10000;
+
+  &.top {
+    top: 20px;
+
+    &-right {
+      right: 20px;
+    }
+
+    &-left {
+      left: 20px;
+    }
+  }
+
+  .toastr {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+
+    &.success {
+      background-color: #35a433;
+    }
+  }
+}
