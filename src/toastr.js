@@ -7,6 +7,7 @@
  * @property { Boolean } [animate=true]
  * @property { ('top-right' | 'top-left' | 'bottom-right' | 'bottom-left' | 'top-center' | 'bottom-center' ) } [position=top-right]
  * @property { ( 'fade' ) } [animation=fade]
+ * @property { Number } [timeout=6000] - This is a default timeout to remove toastr, you can change individuali per toastr
  */
 
 let mainContainer;
@@ -88,6 +89,18 @@ class Toastr {
 
   success(message, timeout, customClass) {
     return this.toastr(message, 'success', timeout, customClass)
+  }
+
+  error(message, timeout, customClass) {
+    return this.toastr(message, 'error', timeout, customClass);
+  }
+
+  warning(message, timeout, customClass) {
+    return this.toastr(message, 'warning', timeout, customClass);
+  }
+
+  info(message, timeout, customClass) {
+    return this.toastr(message, 'info', timeout, customClass);
   }
 
   /**

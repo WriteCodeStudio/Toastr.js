@@ -20,25 +20,66 @@
   z-index: 10000;
 
   &.top {
-    top: 20px;
-
     &-right {
+      top: 10px;
       right: 20px;
+      text-align: right;
     }
 
     &-left {
+      top: 10px;
       left: 20px;
+      text-align: left;
+    }
+
+    &-center {
+      top: 10px;
+      left: 50%;
+      text-align: center;
+    }
+  }
+
+  &.bottom {
+    &-right {
+      bottom: 10px;
+      right: 20px;
+      text-align: right;
+    }
+
+    &-left {
+      bottom: 10px;
+      left: 20px;
+      text-align: left;
+    }
+
+    &-center {
+      bottom: 10px;
+      left: 50%;
+      text-align: center;
     }
   }
 
   .toastr {
     color: #ffffff;
-    text-align: center;
     padding: 10px 20px;
     margin-bottom: 10px;
+    width: fit-content;
+    display: inline-block;
 
     &.success {
-      background-color: #35a433;
+      background-color: #36e278;
+    }
+
+    &.error {
+      background-color: #e23636;
+    }
+
+    &.warning {
+      background-color: #e2c236;
+    }
+
+    &.info {
+      background-color: #368fe2;
     }
   }
 }
